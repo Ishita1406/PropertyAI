@@ -1,0 +1,22 @@
+Source: Knight Frank-style India Real Estate Outlook (SYNTHETIC illustrative dataset
+prepared for this capstone project — not actual published Knight Frank figures)
+
+Bangalore's eastern IT corridor (Whitefield, Marathahalli, ORR) continues to show the
+strongest residential demand among Indian metros, driven by sustained IT/ITES leasing
+and the Namma Metro Purple Line extension reducing commute times to Whitefield from over
+60 minutes to under 30 minutes. Illustrative 5-year price CAGR for Whitefield is modeled
+at 8-10%, with rental demand outpacing supply due to continued tech park expansion.
+
+Mumbai's South-Central micro-markets (Worli, Lower Parel) remain price-inelastic with
+high absolute capital values but compressed rental yields (under 2%), making them
+historically better suited to long-term appreciation plays than rental-yield strategies.
+
+Mumbai's low-lying eastern suburbs (Dadar, Kurla, Sion) sit in designated monsoon
+flood-risk zones per BMC disaster management mapping; these areas have experienced
+recurring waterlogging in July-August monsoon months, which depresses short-term rental
+demand and increases insurance/maintenance costs for ground and lower-floor units.
+
+Pune's Hinjewadi IT corridor outlook is mixed in the current illustrative dataset: IT
+park expansion continues to support tenant demand, but Phase 2/3 connectivity has been
+hampered by repeated delays to the proposed metro extension, leading to divergent analyst
+views on near-term appreciation (see companion reports).

@@ -1,0 +1,15 @@
+Source: Metro & Infrastructure Expansion Tracker (illustrative dataset for this capstone)
+
+Bangalore: Namma Metro Purple Line extension into Whitefield is operational, materially
+improving connectivity to the ORR/Whitefield IT corridor and supporting residential
+demand in Whitefield, Hoodi, and surrounding localities.
+
+Mumbai: Metro Line 3 (Colaba-Bandra-SEEPZ, underground) is under phased construction and
+expected to improve connectivity for Worli and South Mumbai over the medium term. Metro
+Line 2B improves connectivity along the Dadar-Kurla-Andheri corridor, though this does
+not mitigate the area's existing monsoon flood-risk classification.
+
+Pune: A proposed metro extension into Hinjewadi Phase 2/3 has faced repeated timeline
+delays due to right-of-way and funding disputes; as of the latest tracked update no firm
+revised completion date has been confirmed, which is a key source of analyst disagreement
+on the corridor's medium-term appreciation outlook.

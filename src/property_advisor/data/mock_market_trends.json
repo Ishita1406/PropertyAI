@@ -1,0 +1,342 @@
+{
+  "whitefield_bangalore": {
+    "city": "Bangalore",
+    "locality": "Whitefield",
+    "appreciation_rate_5yr_pct": 9.2,
+    "demand_index": 8.5,
+    "supply_index": 4.0,
+    "rental_yield_avg_pct": 4.3,
+    "avg_monthly_rent_per_sqft_inr": 28,
+    "rera_registered_projects_pct": 92
+  },
+  "worli_mumbai": {
+    "city": "Mumbai",
+    "locality": "Worli",
+    "appreciation_rate_5yr_pct": 5.1,
+    "demand_index": 6.0,
+    "supply_index": 6.5,
+    "rental_yield_avg_pct": 1.8,
+    "avg_monthly_rent_per_sqft_inr": 65,
+    "rera_registered_projects_pct": 88
+  },
+  "dadar_kurla_mumbai": {
+    "city": "Mumbai",
+    "locality": "Dadar-Kurla Belt",
+    "appreciation_rate_5yr_pct": 6.8,
+    "demand_index": 7.2,
+    "supply_index": 5.0,
+    "rental_yield_avg_pct": 3.1,
+    "avg_monthly_rent_per_sqft_inr": 55,
+    "rera_registered_projects_pct": 80
+  },
+  "hinjewadi_pune": {
+    "city": "Pune",
+    "locality": "Hinjewadi Phase 2",
+    "appreciation_rate_5yr_pct": 7.5,
+    "demand_index": 7.0,
+    "supply_index": 6.8,
+    "rental_yield_avg_pct": 3.8,
+    "avg_monthly_rent_per_sqft_inr": 22,
+    "rera_registered_projects_pct": 70
+  },
+  "indiranagar_bangalore": {
+    "city": "Bangalore",
+    "locality": "Indiranagar",
+    "appreciation_rate_5yr_pct": 7.1,
+    "demand_index": 8.2,
+    "supply_index": 5.2,
+    "rental_yield_avg_pct": 3.0,
+    "avg_monthly_rent_per_sqft_inr": 48,
+    "rera_registered_projects_pct": 90
+  },
+  "electronic_city_bangalore": {
+    "city": "Bangalore",
+    "locality": "Electronic City",
+    "appreciation_rate_5yr_pct": 8.4,
+    "demand_index": 7.8,
+    "supply_index": 5.5,
+    "rental_yield_avg_pct": 4.6,
+    "avg_monthly_rent_per_sqft_inr": 24,
+    "rera_registered_projects_pct": 88
+  },
+  "sarjapur_road_bangalore": {
+    "city": "Bangalore",
+    "locality": "Sarjapur Road",
+    "appreciation_rate_5yr_pct": 8.8,
+    "demand_index": 8.0,
+    "supply_index": 6.2,
+    "rental_yield_avg_pct": 3.9,
+    "avg_monthly_rent_per_sqft_inr": 27,
+    "rera_registered_projects_pct": 84
+  },
+  "baner_pune": {
+    "city": "Pune",
+    "locality": "Baner",
+    "appreciation_rate_5yr_pct": 7.9,
+    "demand_index": 7.6,
+    "supply_index": 5.8,
+    "rental_yield_avg_pct": 3.6,
+    "avg_monthly_rent_per_sqft_inr": 31,
+    "rera_registered_projects_pct": 82
+  },
+  "wakad_pune": {
+    "city": "Pune",
+    "locality": "Wakad",
+    "appreciation_rate_5yr_pct": 8.1,
+    "demand_index": 7.8,
+    "supply_index": 6.0,
+    "rental_yield_avg_pct": 4.0,
+    "avg_monthly_rent_per_sqft_inr": 26,
+    "rera_registered_projects_pct": 79
+  },
+  "kothrud_pune": {
+    "city": "Pune",
+    "locality": "Kothrud",
+    "appreciation_rate_5yr_pct": 6.3,
+    "demand_index": 7.0,
+    "supply_index": 4.9,
+    "rental_yield_avg_pct": 2.6,
+    "avg_monthly_rent_per_sqft_inr": 34,
+    "rera_registered_projects_pct": 86
+  },
+  "andheri_west_mumbai": {
+    "city": "Mumbai",
+    "locality": "Andheri West",
+    "appreciation_rate_5yr_pct": 5.8,
+    "demand_index": 7.4,
+    "supply_index": 5.7,
+    "rental_yield_avg_pct": 2.4,
+    "avg_monthly_rent_per_sqft_inr": 72,
+    "rera_registered_projects_pct": 89
+  },
+  "thane_west_mumbai": {
+    "city": "Mumbai",
+    "locality": "Thane West",
+    "appreciation_rate_5yr_pct": 7.2,
+    "demand_index": 7.6,
+    "supply_index": 6.0,
+    "rental_yield_avg_pct": 3.2,
+    "avg_monthly_rent_per_sqft_inr": 38,
+    "rera_registered_projects_pct": 84
+  },
+  "kharghar_navi_mumbai": {
+    "city": "Navi Mumbai",
+    "locality": "Kharghar",
+    "appreciation_rate_5yr_pct": 8.0,
+    "demand_index": 7.5,
+    "supply_index": 5.4,
+    "rental_yield_avg_pct": 3.5,
+    "avg_monthly_rent_per_sqft_inr": 32,
+    "rera_registered_projects_pct": 82
+  },
+  "gurgaon_cyber_city": {
+    "city": "Gurgaon",
+    "locality": "DLF Cyber City",
+    "appreciation_rate_5yr_pct": 7.4,
+    "demand_index": 8.4,
+    "supply_index": 5.0,
+    "rental_yield_avg_pct": 3.4,
+    "avg_monthly_rent_per_sqft_inr": 58,
+    "rera_registered_projects_pct": 87
+  },
+  "noida_sector_150": {
+    "city": "Noida",
+    "locality": "Sector 150",
+    "appreciation_rate_5yr_pct": 8.6,
+    "demand_index": 7.7,
+    "supply_index": 6.6,
+    "rental_yield_avg_pct": 3.3,
+    "avg_monthly_rent_per_sqft_inr": 26,
+    "rera_registered_projects_pct": 78
+  },
+  "dwarka_delhi": {
+    "city": "Delhi",
+    "locality": "Dwarka",
+    "appreciation_rate_5yr_pct": 5.9,
+    "demand_index": 6.8,
+    "supply_index": 5.1,
+    "rental_yield_avg_pct": 2.5,
+    "avg_monthly_rent_per_sqft_inr": 38,
+    "rera_registered_projects_pct": 85
+  },
+  "gachibowli_hyderabad": {
+    "city": "Hyderabad",
+    "locality": "Gachibowli",
+    "appreciation_rate_5yr_pct": 9.4,
+    "demand_index": 8.6,
+    "supply_index": 5.8,
+    "rental_yield_avg_pct": 4.4,
+    "avg_monthly_rent_per_sqft_inr": 38,
+    "rera_registered_projects_pct": 91
+  },
+  "kondapur_hyderabad": {
+    "city": "Hyderabad",
+    "locality": "Kondapur",
+    "appreciation_rate_5yr_pct": 8.7,
+    "demand_index": 8.1,
+    "supply_index": 6.1,
+    "rental_yield_avg_pct": 4.2,
+    "avg_monthly_rent_per_sqft_inr": 34,
+    "rera_registered_projects_pct": 88
+  },
+  "kokapet_hyderabad": {
+    "city": "Hyderabad",
+    "locality": "Kokapet",
+    "appreciation_rate_5yr_pct": 9.6,
+    "demand_index": 8.3,
+    "supply_index": 6.9,
+    "rental_yield_avg_pct": 3.6,
+    "avg_monthly_rent_per_sqft_inr": 32,
+    "rera_registered_projects_pct": 86
+  },
+  "omr_chennai": {
+    "city": "Chennai",
+    "locality": "OMR",
+    "appreciation_rate_5yr_pct": 7.8,
+    "demand_index": 7.5,
+    "supply_index": 6.3,
+    "rental_yield_avg_pct": 4.1,
+    "avg_monthly_rent_per_sqft_inr": 25,
+    "rera_registered_projects_pct": 80
+  },
+  "anna_nagar_chennai": {
+    "city": "Chennai",
+    "locality": "Anna Nagar",
+    "appreciation_rate_5yr_pct": 5.6,
+    "demand_index": 7.1,
+    "supply_index": 4.8,
+    "rental_yield_avg_pct": 2.4,
+    "avg_monthly_rent_per_sqft_inr": 39,
+    "rera_registered_projects_pct": 84
+  },
+  "new_town_kolkata": {
+    "city": "Kolkata",
+    "locality": "New Town",
+    "appreciation_rate_5yr_pct": 7.4,
+    "demand_index": 7.3,
+    "supply_index": 6.2,
+    "rental_yield_avg_pct": 4.0,
+    "avg_monthly_rent_per_sqft_inr": 24,
+    "rera_registered_projects_pct": 76
+  },
+  "salt_lake_kolkata": {
+    "city": "Kolkata",
+    "locality": "Salt Lake",
+    "appreciation_rate_5yr_pct": 6.2,
+    "demand_index": 7.0,
+    "supply_index": 5.0,
+    "rental_yield_avg_pct": 3.1,
+    "avg_monthly_rent_per_sqft_inr": 28,
+    "rera_registered_projects_pct": 80
+  },
+  "sg_highway_ahmedabad": {
+    "city": "Ahmedabad",
+    "locality": "SG Highway",
+    "appreciation_rate_5yr_pct": 7.0,
+    "demand_index": 7.2,
+    "supply_index": 5.7,
+    "rental_yield_avg_pct": 3.7,
+    "avg_monthly_rent_per_sqft_inr": 23,
+    "rera_registered_projects_pct": 83
+  },
+  "vesu_surat": {
+    "city": "Surat",
+    "locality": "Vesu",
+    "appreciation_rate_5yr_pct": 6.7,
+    "demand_index": 6.9,
+    "supply_index": 5.5,
+    "rental_yield_avg_pct": 3.8,
+    "avg_monthly_rent_per_sqft_inr": 19,
+    "rera_registered_projects_pct": 77
+  },
+  "vaishali_nagar_jaipur": {
+    "city": "Jaipur",
+    "locality": "Vaishali Nagar",
+    "appreciation_rate_5yr_pct": 6.9,
+    "demand_index": 6.8,
+    "supply_index": 5.4,
+    "rental_yield_avg_pct": 3.6,
+    "avg_monthly_rent_per_sqft_inr": 20,
+    "rera_registered_projects_pct": 75
+  },
+  "gomti_nagar_lucknow": {
+    "city": "Lucknow",
+    "locality": "Gomti Nagar",
+    "appreciation_rate_5yr_pct": 7.2,
+    "demand_index": 7.0,
+    "supply_index": 5.9,
+    "rental_yield_avg_pct": 3.5,
+    "avg_monthly_rent_per_sqft_inr": 21,
+    "rera_registered_projects_pct": 74
+  },
+  "vijay_nagar_indore": {
+    "city": "Indore",
+    "locality": "Vijay Nagar",
+    "appreciation_rate_5yr_pct": 7.6,
+    "demand_index": 7.1,
+    "supply_index": 5.6,
+    "rental_yield_avg_pct": 4.0,
+    "avg_monthly_rent_per_sqft_inr": 20,
+    "rera_registered_projects_pct": 72
+  },
+  "patia_bhubaneswar": {
+    "city": "Bhubaneswar",
+    "locality": "Patia",
+    "appreciation_rate_5yr_pct": 7.9,
+    "demand_index": 7.2,
+    "supply_index": 5.7,
+    "rental_yield_avg_pct": 4.3,
+    "avg_monthly_rent_per_sqft_inr": 19,
+    "rera_registered_projects_pct": 73
+  },
+  "zirakpur_chandigarh": {
+    "city": "Chandigarh",
+    "locality": "Zirakpur",
+    "appreciation_rate_5yr_pct": 6.5,
+    "demand_index": 6.8,
+    "supply_index": 6.4,
+    "rental_yield_avg_pct": 3.4,
+    "avg_monthly_rent_per_sqft_inr": 19,
+    "rera_registered_projects_pct": 71
+  },
+  "panjim_goa": {
+    "city": "Goa",
+    "locality": "Panjim",
+    "appreciation_rate_5yr_pct": 6.1,
+    "demand_index": 7.0,
+    "supply_index": 4.6,
+    "rental_yield_avg_pct": 3.7,
+    "avg_monthly_rent_per_sqft_inr": 36,
+    "rera_registered_projects_pct": 69
+  },
+  "kakkanad_kochi": {
+    "city": "Kochi",
+    "locality": "Kakkanad",
+    "appreciation_rate_5yr_pct": 7.3,
+    "demand_index": 7.1,
+    "supply_index": 5.7,
+    "rental_yield_avg_pct": 4.2,
+    "avg_monthly_rent_per_sqft_inr": 22,
+    "rera_registered_projects_pct": 76
+  },
+  "saravanampatti_coimbatore": {
+    "city": "Coimbatore",
+    "locality": "Saravanampatti",
+    "appreciation_rate_5yr_pct": 7.1,
+    "demand_index": 6.9,
+    "supply_index": 5.4,
+    "rental_yield_avg_pct": 4.1,
+    "avg_monthly_rent_per_sqft_inr": 20,
+    "rera_registered_projects_pct": 72
+  },
+  "rajpur_road_dehradun": {
+    "city": "Dehradun",
+    "locality": "Rajpur Road",
+    "appreciation_rate_5yr_pct": 6.4,
+    "demand_index": 6.7,
+    "supply_index": 5.0,
+    "rental_yield_avg_pct": 3.2,
+    "avg_monthly_rent_per_sqft_inr": 24,
+    "rera_registered_projects_pct": 68
+  }
+}

@@ -1,0 +1,10 @@
+Source: Mumbai Monsoon Flood Risk Note (illustrative dataset referencing publicly known
+BMC disaster-management flood-prone area classifications)
+
+Low-lying areas of Mumbai including parts of Dadar, Kurla, Sion, and Hindmata have a
+well-documented history of recurring waterlogging during the June-September monsoon
+season due to a combination of low elevation, tidal backflow, and stormwater drainage
+capacity constraints. Ground-floor and lower-floor residential units in these pockets
+face elevated risk of monsoon-season flooding, which can affect habitability, insurance
+costs, and resale liquidity. Civic mitigation works (pumping stations, drain
+desilting) have reduced but not eliminated flood incidents in recent years.

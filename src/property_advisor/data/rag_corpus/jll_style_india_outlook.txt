@@ -1,0 +1,15 @@
+Source: JLL-style India Real Estate Outlook (SYNTHETIC illustrative dataset prepared for
+this capstone project — not actual published JLL figures)
+
+Tier-1 city office and residential markets (Mumbai, Bangalore, Delhi-NCR) continue to
+attract the bulk of institutional investment, but capital values in prime Mumbai
+micro-markets have decoupled from rental growth, compressing yields for buy-to-let
+investors. Bangalore's IT corridor remains the most balanced market nationally for
+investors seeking both rental yield and appreciation, supported by infrastructure
+investment (metro, ORR widening) and continued net in-migration of tech workers.
+
+Tier-2 and Tier-3 cities (e.g., Muzaffarpur, Patna, smaller Bihar/UP towns) have limited
+organized market data coverage; transaction volumes are dominated by informal/unlisted
+deals, and standardized appreciation or rental-yield benchmarks are not reliably
+available for many such localities. Investors should treat Tier-3 market data gaps as a
+data-quality risk rather than assume zero activity.

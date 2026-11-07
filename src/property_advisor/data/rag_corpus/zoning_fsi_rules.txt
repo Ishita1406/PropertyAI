@@ -1,0 +1,11 @@
+Source: Zoning and FSI/FAR Primer (illustrative regulatory reference)
+
+Indian municipal development plans classify land into zones (residential, commercial,
+industrial, mixed-use, no-development/green zones). Floor Space Index (FSI), also called
+Floor Area Ratio (FAR), caps the built-up area relative to plot size and varies by city,
+zone, and proximity to metro corridors (many cities grant FSI premiums near transit
+nodes, e.g., Transit-Oriented Development bonuses near metro stations in Bangalore,
+Mumbai, and Pune). Buyers of plots or under-construction property should confirm zoning
+classification and FSI eligibility with the local municipal corporation, since
+unauthorized construction beyond sanctioned FSI is subject to demolition or regularization
+penalties under state unauthorized-construction regulations.

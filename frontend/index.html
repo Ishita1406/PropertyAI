@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Property AI — Indian Property Investment Advisor</title>
+<style>
+  :root {
+    --bg: #0f1419;
+    --panel: #161c24;
+    --panel-border: #262e38;
+    --text: #e8edf2;
+    --text-muted: #8b97a5;
+    --accent: #4f8df5;
+    --accent-hover: #6ba0f7;
+    --buy: #1e7e34;
+    --buy-bg: #16331f;
+    --hold: #b8860b;
+    --hold-bg: #332a10;
+    --avoid: #c82333;
+    --avoid-bg: #331417;
+    --radius: 10px;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  header {
+    padding: 28px 24px 18px;
+    text-align: center;
+    border-bottom: 1px solid var(--panel-border);
+  }
+
+  header h1 {
+    margin: 0 0 4px;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  header p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+  }
+
+  main {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 28px 20px 60px;
+    display: grid;
+    gap: 24px;
+  }
+
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: var(--radius);
+    padding: 22px;
+  }
+
+  .card h2 {
+    margin: 0 0 16px;
+    font-size: 1.1rem;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  .field.full { grid-column: 1 / -1; }
+
+  label {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    font-weight: 600;
+  }
+
+  input, select {
+    background: #0d1218;
+    border: 1px solid var(--panel-border);
+    border-radius: 8px;
+    color: var(--text);
+    padding: 10px 12px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+
+  input:focus, select:focus { border-color: var(--accent); }
+
+  button#analyzeBtn {
+    grid-column: 1 / -1;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 13px 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+    margin-top: 4px;
+  }
+
+  button#analyzeBtn:hover { background: var(--accent-hover); }
+  button#analyzeBtn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+  #status {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    min-height: 1.2em;
+  }
+
+  #error {
+    display: none;
+    background: var(--avoid-bg);
+    border: 1px solid var(--avoid);
+    color: #ff9aa3;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+  }
+
+  #results { display: none; }
+
+  .decision-card {
+    border-radius: var(--radius);
+    padding: 24px;
+    text-align: center;
+    border: 1px solid var(--panel-border);
+    margin-bottom: 20px;
+  }
+
+  .decision-card.BUY { background: var(--buy-bg); border-color: var(--buy); }
+  .decision-card.HOLD { background: var(--hold-bg); border-color: var(--hold); }
+  .decision-card.AVOID { background: var(--avoid-bg); border-color: var(--avoid); }
+
+  .decision-label {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+
+  .decision-card.BUY .decision-label { color: #4ade80; }
+  .decision-card.HOLD .decision-label { color: #facc15; }
+  .decision-card.AVOID .decision-label { color: #f87171; }
+
+  .decision-confidence {
+    color: var(--text-muted);
+    margin-top: 4px;
+    font-size: 0.9rem;
+  }
+
+  .decision-justification {
+    margin-top: 14px;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: var(--text);
+    text-align: left;
+  }
+
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+
+  .metric-box {
+    background: #0d1218;
+    border: 1px solid var(--panel-border);
+    border-radius: 8px;
+    padding: 14px;
+    text-align: center;
+  }
+
+  .metric-box .value { font-size: 1.3rem; font-weight: 700; }
+  .metric-box .label { font-size: 0.78rem; color: var(--text-muted); margin-top: 4px; }
+
+  .metric-box .value.negative { color: #f87171; }
+  .metric-box .value.positive { color: #4ade80; }
+
+  ul.evidence-list {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  .reasons-list {
+    margin: 10px 0 0;
+    padding-left: 20px;
+    font-size: 0.85rem;
+    color: #facc15;
+    line-height: 1.6;
+  }
+
+  .actions-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 22px;
+  }
+
+  .actions-row button {
+    flex: 1;
+    border: none;
+    border-radius: 8px;
+    padding: 13px 18px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+
+  .actions-row button:disabled { opacity: 0.6; cursor: not-allowed; }
+
+  #approveBtn { background: var(--buy); color: white; }
+  #approveBtn:hover { opacity: 0.88; }
+  #rejectBtn { background: transparent; color: #f87171; border: 1px solid var(--avoid); }
+  #rejectBtn:hover { background: var(--avoid-bg); }
+
+  .status-banner {
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+
+  .status-banner.pending { background: var(--hold-bg); color: #facc15; }
+  .status-banner.approved { background: var(--buy-bg); color: #4ade80; }
+  .status-banner.warning { background: var(--hold-bg); color: #facc15; }
+
+  .downloads-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+  }
+
+  .downloads-row a {
+    flex: 1;
+    min-width: 140px;
+    text-align: center;
+    background: #0d1218;
+    border: 1px solid var(--accent);
+    color: var(--accent-hover);
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.15s;
+  }
+
+  .downloads-row a:hover { background: rgba(79, 141, 245, 0.1); }
+
+  .spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--panel-border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  footer {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    padding-bottom: 24px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Property AI</h1>
+  <p>Multi-agent investment analysis for Indian real estate</p>
+</header>
+
+<main>
+  <section class="card">
+    <h2>Analyze a Property</h2>
+    <form id="analyzeForm" novalidate>
+      <div class="field full">
+        <label for="address">Property Address</label>
+        <input id="address" type="text" placeholder="e.g. Whitefield, Bangalore, 560066" required />
+      </div>
+      <div class="field">
+        <label for="budget">Budget (INR)</label>
+        <input id="budget" type="number" min="1" placeholder="9500000" required />
+      </div>
+      <div class="field">
+        <label for="horizon">Investment Horizon (years)</label>
+        <input id="horizon" type="number" min="1" max="50" value="5" required />
+      </div>
+      <div class="field full">
+        <label for="strategy">Investment Strategy</label>
+        <select id="strategy">
+          <option value="rental">Rental</option>
+          <option value="flip">Flip</option>
+          <option value="long_term_appreciation">Long-term appreciation</option>
+        </select>
+      </div>
+      <button id="analyzeBtn" type="submit">Analyze Property</button>
+    </form>
+  </section>
+
+  <div id="status"></div>
+  <div id="error"></div>
+
+  <section id="results" class="card">
+    <div id="statusBanner" class="status-banner" style="display:none;"></div>
+
+    <div id="decisionCard" class="decision-card">
+      <div class="decision-label" id="decisionLabel">—</div>
+      <div class="decision-confidence" id="decisionConfidence"></div>
+      <div class="decision-justification" id="decisionJustification"></div>
+    </div>
+
+    <div class="metrics-grid">
+      <div class="metric-box">
+        <div class="value" id="metricRisk">—</div>
+        <div class="label">Risk Score</div>
+      </div>
+      <div class="metric-box">
+        <div class="value" id="metricRoi">—</div>
+        <div class="label">ROI</div>
+      </div>
+      <div class="metric-box">
+        <div class="value" id="metricYield">—</div>
+        <div class="label">Rental Yield</div>
+      </div>
+      <div class="metric-box">
+        <div class="value" id="metricCashFlow">—</div>
+        <div class="label">Annual Cash Flow</div>
+      </div>
+    </div>
+
+    <h2>Supporting Evidence</h2>
+    <ul class="evidence-list" id="evidenceList"></ul>
+
+    <div id="guardrailSection" style="display:none; margin-top:18px;">
+      <h2>Guardrail Notes</h2>
+      <ul class="reasons-list" id="reasonsList"></ul>
+    </div>
+
+    <div id="researchSection" style="display:none; margin-top:18px;">
+      <h2>Due Diligence Findings</h2>
+      <p id="researchSummary" style="margin:4px 0 8px;"></p>
+      <h3 style="font-size:0.95rem;">Regulatory requirements</h3>
+      <ul class="reasons-list" id="requirementsList"></ul>
+      <h3 style="font-size:0.95rem;">Concerns</h3>
+      <ul class="reasons-list" id="concernsList"></ul>
+      <h3 style="font-size:0.95rem;">Evidence gaps</h3>
+      <ul class="reasons-list" id="gapsList"></ul>
+      <h3 style="font-size:0.95rem;">Sources cited</h3>
+      <ul class="evidence-list" id="citationsList"></ul>
+    </div>
+
+    <p id="dataDisclaimer" style="font-size:0.8rem; opacity:0.8; margin-top:14px;">
+      Property, price, rent, market and risk figures are SIMULATED for demonstration and are not real market
+      observations. Legal references come from official government documents and are not legal advice.
+    </p>
+
+    <div id="actionsRow" class="actions-row" style="display:none;">
+      <button id="approveBtn" type="button">Approve</button>
+      <button id="rejectBtn" type="button">Reject</button>
+    </div>
+
+    <div id="downloadsRow" class="downloads-row" style="display:none;">
+      <a id="downloadPdf" href="#" target="_blank">Download PDF Report</a>
+      <a id="downloadJson" href="#" target="_blank">Download JSON Report</a>
+      <a id="downloadMd" href="#" target="_blank">Download Markdown Report</a>
+    </div>
+  </section>
+</main>
+
+<footer>Property AI - for educational / capstone demonstration purposes only. Not financial advice.</footer>
+
+<script>
+  console.log("SCRIPT LOADED");
+
+  // Surface any uncaught error/rejection visibly instead of letting the page
+  // just sit there doing nothing with no console output a casual look would catch.
+  window.addEventListener("error", (e) => {
+    console.error("UNCAUGHT ERROR", e.error || e.message, e);
+    showErrorSafe("Unexpected error: " + (e.message || "see console for details"));
+  });
+  window.addEventListener("unhandledrejection", (e) => {
+    console.error("UNHANDLED PROMISE REJECTION", e.reason);
+    showErrorSafe("Unexpected error: " + (e.reason && e.reason.message ? e.reason.message : "see console for details"));
+  });
+  function showErrorSafe(msg) {
+    const el = document.getElementById("error");
+    if (el) {
+      el.style.display = "block";
+      el.textContent = msg;
+    }
+  }
+
+  const API_BASE = "";
+
+  let currentThreadId = null;
+
+  function mustFind(id) {
+    const el = document.getElementById(id);
+    if (!el) {
+      console.error("ELEMENT NOT FOUND:", id);
+    } else {
+      console.log("FOUND ELEMENT:", id);
+    }
+    return el;
+  }
+
+  const form = mustFind("analyzeForm");
+  const statusEl = mustFind("status");
+  const errorEl = mustFind("error");
+  const resultsEl = mustFind("results");
+  const analyzeBtn = mustFind("analyzeBtn");
+  const statusBanner = mustFind("statusBanner");
+  const actionsRow = mustFind("actionsRow");
+  const downloadsRow = mustFind("downloadsRow");
+  const approveBtn = mustFind("approveBtn");
+  const rejectBtn = mustFind("rejectBtn");
+
+  console.log("FORM FOUND:", form);
+
+  function formatInr(value) {
+    if (value === null || value === undefined || isNaN(value)) return "N/A";
+    return "₹" + Number(value).toLocaleString("en-IN", { maximumFractionDigits: 0 });
+  }
+
+  function setLoading(loading, message) {
+    analyzeBtn.disabled = loading;
+    approveBtn.disabled = loading;
+    rejectBtn.disabled = loading;
+    statusEl.innerHTML = loading
+      ? `<span class="spinner"></span>${message || "Running multi-agent analysis... this can take about a minute."}`
+      : "";
+  }
+
+  function showError(message) {
+    errorEl.style.display = "block";
+    errorEl.textContent = message;
+  }
+
+  function clearError() {
+    errorEl.style.display = "none";
+    errorEl.textContent = "";
+  }
+
+  function setStatusBanner(text, kind) {
+    if (!text) {
+      statusBanner.style.display = "none";
+      return;
+    }
+    statusBanner.style.display = "block";
+    statusBanner.className = "status-banner " + kind;
+    statusBanner.textContent = text;
+  }
+
+  function renderRecommendationCard(rec, metrics, risk, guardrail) {
+    const decision = rec.decision || "HOLD";
+    document.getElementById("decisionCard").className = "decision-card " + decision;
+    document.getElementById("decisionLabel").textContent = decision;
+    document.getElementById("decisionConfidence").textContent =
+      "Confidence: " + (rec.confidence_score !== undefined ? (rec.confidence_score * 100).toFixed(0) + "%" : "N/A");
+    document.getElementById("decisionJustification").textContent = rec.justification || "";
+
+    document.getElementById("metricRisk").textContent = risk.risk_score !== undefined ? risk.risk_score : "N/A";
+    document.getElementById("metricRoi").textContent = metrics.roi_pct !== undefined ? metrics.roi_pct + "%" : "N/A";
+    document.getElementById("metricYield").textContent = metrics.rental_yield_pct !== undefined ? metrics.rental_yield_pct + "%" : "N/A";
+
+    const cashFlowEl = document.getElementById("metricCashFlow");
+    cashFlowEl.textContent = formatInr(metrics.annual_cash_flow_inr);
+    cashFlowEl.className = "value " + (metrics.annual_cash_flow_inr < 0 ? "negative" : "positive");
+
+    const evidenceList = document.getElementById("evidenceList");
+    evidenceList.innerHTML = "";
+    const evidence = rec.supporting_evidence || [];
+    if (evidence.length === 0) {
+      evidenceList.innerHTML = "<li>No supporting evidence provided</li>";
+    } else {
+      evidence.forEach((e) => {
+        const li = document.createElement("li");
+        li.textContent = e;
+        evidenceList.appendChild(li);
+      });
+    }
+
+    const reasons = guardrail.reasons || [];
+    const guardrailSection = document.getElementById("guardrailSection");
+    const reasonsList = document.getElementById("reasonsList");
+    reasonsList.innerHTML = "";
+    if (reasons.length > 0) {
+      guardrailSection.style.display = "block";
+      reasons.forEach((r) => {
+        const li = document.createElement("li");
+        li.textContent = r;
+        reasonsList.appendChild(li);
+      });
+    } else {
+      guardrailSection.style.display = "none";
+    }
+  }
+
+  function fillList(id, items, emptyText) {
+    const el = document.getElementById(id);
+    el.innerHTML = "";
+    if (!items || items.length === 0) {
+      const li = document.createElement("li");
+      li.textContent = emptyText;
+      el.appendChild(li);
+      return;
+    }
+    items.forEach((t) => {
+      const li = document.createElement("li");
+      li.textContent = t;
+      el.appendChild(li);
+    });
+  }
+
+  function renderResearch(findings, disclaimer) {
+    const section = document.getElementById("researchSection");
+    if (disclaimer) document.getElementById("dataDisclaimer").textContent = disclaimer;
+    if (!findings || Object.keys(findings).length === 0) {
+      section.style.display = "none";
+      return;
+    }
+    section.style.display = "block";
+    document.getElementById("researchSummary").textContent =
+      (findings.summary || "") + (findings.status && findings.status !== "complete" ? " (research status: " + findings.status + ")" : "");
+    fillList("requirementsList", (findings.regulatory_requirements || []).map(
+      (r) => r.requirement + " [" + (r.citation_ids || []).join(", ") + "; " + (r.binding_status || []).join(", ") + "]"
+    ), "None identified with valid citations");
+    fillList("concernsList", (findings.concerns || []).map(
+      (c) => "(" + c.severity + ", " + c.basis + ") " + c.concern
+    ), "None flagged");
+    fillList("gapsList", (findings.evidence_gaps || []).map((g) => g.gap), "None");
+    const cited = (findings.evidence || []).filter((e) => e.cited);
+    fillList("citationsList", cited.map((e) => e.evidence_id + ": " + e.citation), "No sources cited");
+  }
+
+  function renderPendingApproval(data) {
+    console.log("RENDERING APPROVAL UI", data);
+    resultsEl.style.display = "block";
+    currentThreadId = data.thread_id;
+    setStatusBanner("Human approval required before this recommendation is final.", "pending");
+    renderRecommendationCard(
+      data.recommendation || {},
+      data.investment_metrics || {},
+      data.risk_assessment || {},
+      data.guardrail_result || {}
+    );
+    renderResearch(data.research_findings || {}, data.data_disclaimer);
+    actionsRow.style.display = "flex";
+    downloadsRow.style.display = "none";
+    console.log("APPROVAL UI RENDERED. results display:", resultsEl.style.display, "actionsRow display:", actionsRow.style.display);
+  }
+
+  function renderRefused(report) {
+    resultsEl.style.display = "block";
+    currentThreadId = null;
+    setStatusBanner("Refused — no valid recommendation to approve (guardrail refusal or invalid input).", "warning");
+    document.getElementById("decisionCard").className = "decision-card AVOID";
+    document.getElementById("decisionLabel").textContent = "REFUSED";
+    document.getElementById("decisionConfidence").textContent = "";
+    document.getElementById("decisionJustification").textContent =
+      report.reason || "The Guardrail Agent refused this recommendation.";
+    document.getElementById("metricRisk").textContent = "—";
+    document.getElementById("metricRoi").textContent = "—";
+    document.getElementById("metricYield").textContent = "—";
+    document.getElementById("metricCashFlow").textContent = "—";
+    document.getElementById("evidenceList").innerHTML = "";
+    document.getElementById("guardrailSection").style.display = "none";
+    document.getElementById("researchSection").style.display = "none";
+    actionsRow.style.display = "none";
+    downloadsRow.style.display = "none";
+  }
+
+  function renderApproved(finalReport, reportPaths, reportError) {
+    console.log("RENDERING APPROVED UI", finalReport, reportPaths, reportError);
+    resultsEl.style.display = "block";
+    currentThreadId = null;
+    setStatusBanner("✓ Recommendation approved", "approved");
+    renderRecommendationCard(
+      finalReport.recommendation || {},
+      finalReport.investment_metrics || {},
+      finalReport.risk_assessment || {},
+      finalReport.guardrail_result || {}
+    );
+    renderResearch(finalReport.research_findings || {}, finalReport.data_disclaimer);
+    actionsRow.style.display = "none";
+
+    if (reportPaths) {
+      downloadsRow.style.display = "flex";
+      document.getElementById("downloadPdf").href = API_BASE + reportPaths.pdf;
+      document.getElementById("downloadJson").href = API_BASE + reportPaths.json;
+      document.getElementById("downloadMd").href = API_BASE + reportPaths.markdown;
+      console.log("DOWNLOAD LINKS SET", {
+        pdf: API_BASE + reportPaths.pdf,
+        json: API_BASE + reportPaths.json,
+        markdown: API_BASE + reportPaths.markdown,
+      });
+    } else {
+      downloadsRow.style.display = "none";
+      if (reportError) {
+        setStatusBanner(reportError, "warning");
+      }
+    }
+  }
+
+  function validateAnalyzeForm(payload) {
+    if (!payload.address) {
+      return "Property address is required.";
+    }
+    if (payload.budget === "" || payload.budget === null || isNaN(payload.budget) || payload.budget <= 0) {
+      return "Budget must be a number greater than 0.";
+    }
+    if (payload.horizon === "" || payload.horizon === null || isNaN(payload.horizon) || payload.horizon < 1 || payload.horizon > 50) {
+      return "Investment horizon must be a whole number between 1 and 50.";
+    }
+    return null;
+  }
+
+  async function postJson(path, payload) {
+    console.log("SENDING REQUEST", path, payload);
+    const res = await fetch(API_BASE + path, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload || {}),
+    });
+    console.log("RESPONSE STATUS", path, res.status);
+    if (!res.ok) {
+      const body = await res.json().catch(() => ({}));
+      console.error("REQUEST FAILED", path, res.status, body);
+      throw new Error(body.detail || `Request failed with status ${res.status}`);
+    }
+    const data = await res.json();
+    console.log("RESPONSE BODY", path, data);
+    return data;
+  }
+
+  form.addEventListener("submit", async (e) => {
+    console.log("SUBMIT FIRED");
+    e.preventDefault();
+    clearError();
+    resultsEl.style.display = "none";
+    actionsRow.style.display = "none";
+    downloadsRow.style.display = "none";
+    currentThreadId = null;
+
+    const addressEl = document.getElementById("address");
+    const budgetEl = document.getElementById("budget");
+    const horizonEl = document.getElementById("horizon");
+    const strategyEl = document.getElementById("strategy");
+    console.log("RAW FIELD VALUES", {
+      address: addressEl.value,
+      budget: budgetEl.value,
+      horizon: horizonEl.value,
+      strategy: strategyEl.value,
+    });
+
+    const payload = {
+      address: addressEl.value.trim(),
+      budget: budgetEl.value === "" ? NaN : parseFloat(budgetEl.value),
+      horizon: horizonEl.value === "" ? NaN : parseInt(horizonEl.value, 10),
+      strategy: strategyEl.value,
+    };
+    console.log("PAYLOAD", payload);
+
+    const validationError = validateAnalyzeForm(payload);
+    if (validationError) {
+      console.warn("FORM INVALID:", validationError);
+      showError(validationError);
+      return;
+    }
+    console.log("FORM VALID");
+
+    setLoading(true);
+    try {
+      const data = await postJson("/analyze", payload);
+      console.log("ANALYZE RESPONSE", data);
+      if (data.approval_required) {
+        renderPendingApproval(data);
+      } else {
+        renderRefused(data.final_report || {});
+      }
+    } catch (err) {
+      console.error("ANALYZE FAILED", err);
+      showError("Analysis failed: " + err.message + ". Is the backend running at " + (API_BASE || window.location.origin) + "?");
+    } finally {
+      setLoading(false);
+    }
+  });
+  console.log("SUBMIT HANDLER ATTACHED");
+
+  approveBtn.addEventListener("click", async () => {
+    console.log("APPROVE CLICKED", "thread_id:", currentThreadId);
+    if (!currentThreadId) {
+      console.warn("APPROVE CLICKED WITH NO ACTIVE THREAD — ignoring");
+      return;
+    }
+    clearError();
+    setLoading(true, "Recording approval and generating reports...");
+    try {
+      const data = await postJson("/approve", { thread_id: currentThreadId });
+      console.log("APPROVE RESPONSE", data);
+      renderApproved(data.final_report || {}, data.report_paths, data.report_error);
+    } catch (err) {
+      console.error("APPROVE FAILED", err);
+      showError("Approval failed: " + err.message);
+    } finally {
+      setLoading(false);
+    }
+  });
+
+  rejectBtn.addEventListener("click", async () => {
+    console.log("REJECT CLICKED", "thread_id:", currentThreadId);
+    if (!currentThreadId) {
+      console.warn("REJECT CLICKED WITH NO ACTIVE THREAD — ignoring");
+      return;
+    }
+    const feedback = window.prompt("Feedback for re-analysis (why are you rejecting this recommendation?):", "");
+    console.log("REJECT FEEDBACK PROMPT RESULT", feedback);
+    if (feedback === null) return; // user cancelled the prompt
+    clearError();
+    setLoading(true, "Re-running analysis with your feedback...");
+    try {
+      const data = await postJson("/reject", { thread_id: currentThreadId, feedback });
+      console.log("REJECT RESPONSE", data);
+      if (data.approval_required) {
+        renderPendingApproval(data);
+      } else {
+        renderRefused(data.final_report || {});
+      }
+    } catch (err) {
+      console.error("REJECT FAILED", err);
+      showError("Rejection failed: " + err.message);
+    } finally {
+      setLoading(false);
+    }
+  });
+
+  console.log("SCRIPT INITIALIZATION COMPLETE");
+</script>
+
+</body>
+</html>

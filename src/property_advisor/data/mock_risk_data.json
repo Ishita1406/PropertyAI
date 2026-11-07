@@ -1,0 +1,240 @@
+{
+  "whitefield_bangalore": {
+    "crime_score": 22,
+    "flood_risk": "low",
+    "vacancy_risk": "low",
+    "regulatory_risk": "low",
+    "market_volatility": "low"
+  },
+  "worli_mumbai": {
+    "crime_score": 30,
+    "flood_risk": "medium",
+    "vacancy_risk": "medium",
+    "regulatory_risk": "low",
+    "market_volatility": "medium"
+  },
+  "dadar_kurla_mumbai": {
+    "crime_score": 35,
+    "flood_risk": "high",
+    "vacancy_risk": "medium",
+    "regulatory_risk": "medium",
+    "market_volatility": "medium"
+  },
+  "hinjewadi_pune": {
+    "crime_score": 18,
+    "flood_risk": "low",
+    "vacancy_risk": "medium",
+    "regulatory_risk": "medium",
+    "market_volatility": "medium"
+  },
+  "indiranagar_bangalore": {
+    "crime_score": 24,
+    "flood_risk": "low",
+    "vacancy_risk": "low",
+    "regulatory_risk": "low",
+    "market_volatility": "medium"
+  },
+  "electronic_city_bangalore": {
+    "crime_score": 26,
+    "flood_risk": "low",
+    "vacancy_risk": "medium",
+    "regulatory_risk": "low",
+    "market_volatility": "medium"
+  },
+  "sarjapur_road_bangalore": {
+    "crime_score": 28,
+    "flood_risk": "medium",
+    "vacancy_risk": "medium",
+    "regulatory_risk": "medium",
+    "market_volatility": "medium"
+  },
+  "baner_pune": {
+    "crime_score": 20,
+    "flood_risk": "low",
+    "vacancy_risk": "low",
+    "regulatory_risk": "medium",
+    "market_volatility": "medium"
+  },
+  "wakad_pune": {
+    "crime_score": 22,
+    "flood_risk": "low",
+    "vacancy_risk": "medium",
+    "regulatory_risk": "medium",
+    "market_volatility": "medium"
+  },
+  "kothrud_pune": {
+    "crime_score": 21,
+    "flood_risk": "low",
+    "vacancy_risk": "low",
+    "regulatory_risk": "low",
+    "market_volatility": "low"
+  },
+  "andheri_west_mumbai": {
+    "crime_score": 32,
+    "flood_risk": "medium",
+    "vacancy_risk": "medium",
+    "regulatory_risk": "low",
+    "market_volatility": "medium"
+  },
+  "thane_west_mumbai": {
+    "crime_score": 29,
+    "flood_risk": "medium",
+    "vacancy_risk": "medium",
+    "regulatory_risk": "medium",
+    "market_volatility": "medium"
+  },
+  "kharghar_navi_mumbai": {
+    "crime_score": 24,
+    "flood_risk": "low",
+    "vacancy_risk": "medium",
+    "regulatory_risk": "medium",
+    "market_volatility": "medium"
+  },
+  "gurgaon_cyber_city": {
+    "crime_score": 34,
+    "flood_risk": "medium",
+    "vacancy_risk": "low",
+    "regulatory_risk": "medium",
+    "market_volatility": "medium"
+  },
+  "noida_sector_150": {
+    "crime_score": 30,
+    "flood_risk": "low",
+    "vacancy_risk": "medium",
+    "regulatory_risk": "medium",
+    "market_volatility": "high"
+  },
+  "dwarka_delhi": {
+    "crime_score": 31,
+    "flood_risk": "low",
+    "vacancy_risk": "medium",
+    "regulatory_risk": "low",
+    "market_volatility": "medium"
+  },
+  "gachibowli_hyderabad": {
+    "crime_score": 19,
+    "flood_risk": "low",
+    "vacancy_risk": "low",
+    "regulatory_risk": "low",
+    "market_volatility": "low"
+  },
+  "kondapur_hyderabad": {
+    "crime_score": 22,
+    "flood_risk": "low",
+    "vacancy_risk": "medium",
+    "regulatory_risk": "low",
+    "market_volatility": "medium"
+  },
+  "kokapet_hyderabad": {
+    "crime_score": 24,
+    "flood_risk": "low",
+    "vacancy_risk": "medium",
+    "regulatory_risk": "medium",
+    "market_volatility": "high"
+  },
+  "omr_chennai": {
+    "crime_score": 25,
+    "flood_risk": "medium",
+    "vacancy_risk": "medium",
+    "regulatory_risk": "medium",
+    "market_volatility": "medium"
+  },
+  "anna_nagar_chennai": {
+    "crime_score": 23,
+    "flood_risk": "medium",
+    "vacancy_risk": "low",
+    "regulatory_risk": "low",
+    "market_volatility": "low"
+  },
+  "new_town_kolkata": {
+    "crime_score": 26,
+    "flood_risk": "medium",
+    "vacancy_risk": "medium",
+    "regulatory_risk": "medium",
+    "market_volatility": "medium"
+  },
+  "salt_lake_kolkata": {
+    "crime_score": 27,
+    "flood_risk": "medium",
+    "vacancy_risk": "low",
+    "regulatory_risk": "low",
+    "market_volatility": "medium"
+  },
+  "sg_highway_ahmedabad": {
+    "crime_score": 25,
+    "flood_risk": "low",
+    "vacancy_risk": "medium",
+    "regulatory_risk": "low",
+    "market_volatility": "medium"
+  },
+  "vesu_surat": {
+    "crime_score": 23,
+    "flood_risk": "medium",
+    "vacancy_risk": "medium",
+    "regulatory_risk": "low",
+    "market_volatility": "medium"
+  },
+  "vaishali_nagar_jaipur": {
+    "crime_score": 24,
+    "flood_risk": "low",
+    "vacancy_risk": "medium",
+    "regulatory_risk": "medium",
+    "market_volatility": "medium"
+  },
+  "gomti_nagar_lucknow": {
+    "crime_score": 28,
+    "flood_risk": "low",
+    "vacancy_risk": "medium",
+    "regulatory_risk": "medium",
+    "market_volatility": "medium"
+  },
+  "vijay_nagar_indore": {
+    "crime_score": 22,
+    "flood_risk": "low",
+    "vacancy_risk": "low",
+    "regulatory_risk": "low",
+    "market_volatility": "medium"
+  },
+  "patia_bhubaneswar": {
+    "crime_score": 21,
+    "flood_risk": "medium",
+    "vacancy_risk": "medium",
+    "regulatory_risk": "medium",
+    "market_volatility": "medium"
+  },
+  "zirakpur_chandigarh": {
+    "crime_score": 27,
+    "flood_risk": "medium",
+    "vacancy_risk": "high",
+    "regulatory_risk": "medium",
+    "market_volatility": "medium"
+  },
+  "panjim_goa": {
+    "crime_score": 20,
+    "flood_risk": "medium",
+    "vacancy_risk": "medium",
+    "regulatory_risk": "medium",
+    "market_volatility": "high"
+  },
+  "kakkanad_kochi": {
+    "crime_score": 24,
+    "flood_risk": "medium",
+    "vacancy_risk": "medium",
+    "regulatory_risk": "medium",
+    "market_volatility": "medium"
+  },
+  "saravanampatti_coimbatore": {
+    "crime_score": 19,
+    "flood_risk": "low",
+    "vacancy_risk": "medium",
+    "regulatory_risk": "low",
+    "market_volatility": "medium"
+  },
+  "rajpur_road_dehradun": {
+    "crime_score": 18,
+    "flood_risk": "medium",
+    "vacancy_risk": "medium",
+    "regulatory_risk": "medium",
+    "market_volatility": "medium"
+  }
+}

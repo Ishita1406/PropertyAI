@@ -1,0 +1,595 @@
+{
+  "whitefield_bangalore": {
+    "match_keywords": ["whitefield", "itpl", "epip"],
+    "city": "Bangalore",
+    "locality": "Whitefield",
+    "pin_code": "560066",
+    "price_inr": 9500000,
+    "area_sqft": 1250,
+    "property_type": "flat",
+    "amenities": ["clubhouse", "gym", "swimming pool", "24x7 security", "power backup", "covered parking"],
+    "location_attributes": {
+      "metro_access": true,
+      "metro_line": "Namma Metro Purple Line (Whitefield extension)",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 2.5,
+      "tech_parks_nearby": ["ITPL", "EPIP Zone", "Prestige Tech Park"]
+    }
+  },
+  "worli_mumbai": {
+    "match_keywords": ["worli"],
+    "city": "Mumbai",
+    "locality": "Worli",
+    "pin_code": "400018",
+    "price_inr": 45000000,
+    "area_sqft": 900,
+    "property_type": "flat",
+    "amenities": ["sea view", "clubhouse", "gym", "24x7 security", "valet parking"],
+    "location_attributes": {
+      "metro_access": true,
+      "metro_line": "Mumbai Metro Line 3 (under construction)",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": null,
+      "tech_parks_nearby": []
+    }
+  },
+  "dadar_kurla_mumbai": {
+    "match_keywords": ["dadar", "kurla", "sion"],
+    "city": "Mumbai",
+    "locality": "Dadar-Kurla Belt",
+    "pin_code": "400014",
+    "price_inr": 18000000,
+    "area_sqft": 750,
+    "property_type": "flat",
+    "amenities": ["lift", "24x7 security", "covered parking"],
+    "location_attributes": {
+      "metro_access": true,
+      "metro_line": "Mumbai Metro Line 2B",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 6,
+      "tech_parks_nearby": ["BKC"],
+      "low_lying_area": true
+    }
+  },
+  "hinjewadi_pune": {
+    "match_keywords": ["hinjewadi", "hinjawadi"],
+    "city": "Pune",
+    "locality": "Hinjewadi Phase 2",
+    "pin_code": "411057",
+    "price_inr": 7200000,
+    "area_sqft": 1100,
+    "property_type": "flat",
+    "amenities": ["clubhouse", "gym", "garden", "24x7 security"],
+    "location_attributes": {
+      "metro_access": false,
+      "metro_line": "Pune Metro extension (proposed)",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 1.0,
+      "tech_parks_nearby": ["Rajiv Gandhi Infotech Park"]
+    }
+  },
+  "muzaffarpur_bihar": {
+    "match_keywords": ["muzaffarpur"],
+    "city": "Muzaffarpur",
+    "locality": "Saraiyaganj",
+    "pin_code": "842002",
+    "price_inr": 3500000,
+    "area_sqft": 1400,
+    "property_type": "plot",
+    "amenities": ["boundary wall"],
+    "location_attributes": {
+      "metro_access": false,
+      "schools_nearby": true,
+      "it_corridor_proximity_km": null,
+      "tech_parks_nearby": []
+    }
+  },
+  "indiranagar_bangalore": {
+    "match_keywords": ["indiranagar", "cmh road", "100 feet road"],
+    "city": "Bangalore",
+    "locality": "Indiranagar",
+    "pin_code": "560038",
+    "price_inr": 18500000,
+    "area_sqft": 1350,
+    "property_type": "flat",
+    "amenities": ["clubhouse", "gym", "24x7 security", "covered parking", "power backup"],
+    "location_attributes": {
+      "metro_access": true,
+      "metro_line": "Namma Metro Purple Line",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 6.0,
+      "tech_parks_nearby": ["Bagmane Tech Park", "RMZ Infinity"]
+    }
+  },
+  "electronic_city_bangalore": {
+    "match_keywords": ["electronic city", "electronics city", "neeladri road"],
+    "city": "Bangalore",
+    "locality": "Electronic City",
+    "pin_code": "560100",
+    "price_inr": 6800000,
+    "area_sqft": 1180,
+    "property_type": "flat",
+    "amenities": ["clubhouse", "gym", "swimming pool", "24x7 security", "power backup"],
+    "location_attributes": {
+      "metro_access": false,
+      "metro_line": "Namma Metro Yellow Line (under construction)",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 1.5,
+      "tech_parks_nearby": ["Electronic City Phase 1", "Infosys Campus", "Wipro Campus"]
+    }
+  },
+  "sarjapur_road_bangalore": {
+    "match_keywords": ["sarjapur", "sarjapur road", "carmelaram"],
+    "city": "Bangalore",
+    "locality": "Sarjapur Road",
+    "pin_code": "560035",
+    "price_inr": 10500000,
+    "area_sqft": 1500,
+    "property_type": "villa",
+    "amenities": ["clubhouse", "garden", "swimming pool", "24x7 security", "covered parking"],
+    "location_attributes": {
+      "metro_access": false,
+      "metro_line": "Peripheral connectivity improvements proposed",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 4.0,
+      "tech_parks_nearby": ["RGA Tech Park", "Wipro SEZ"]
+    }
+  },
+  "baner_pune": {
+    "match_keywords": ["baner", "balewadi high street"],
+    "city": "Pune",
+    "locality": "Baner",
+    "pin_code": "411045",
+    "price_inr": 9800000,
+    "area_sqft": 1150,
+    "property_type": "flat",
+    "amenities": ["clubhouse", "gym", "garden", "24x7 security", "covered parking"],
+    "location_attributes": {
+      "metro_access": false,
+      "metro_line": "Pune Metro extension corridor (planned)",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 5.0,
+      "tech_parks_nearby": ["Rajiv Gandhi Infotech Park", "Baner-Balewadi offices"]
+    }
+  },
+  "wakad_pune": {
+    "match_keywords": ["wakad", "bhumkar chowk", "datta mandir road"],
+    "city": "Pune",
+    "locality": "Wakad",
+    "pin_code": "411057",
+    "price_inr": 8200000,
+    "area_sqft": 1050,
+    "property_type": "flat",
+    "amenities": ["clubhouse", "gym", "swimming pool", "24x7 security"],
+    "location_attributes": {
+      "metro_access": false,
+      "metro_line": "Pune Metro Hinjewadi-Shivajinagar corridor (under construction)",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 3.0,
+      "tech_parks_nearby": ["Rajiv Gandhi Infotech Park"]
+    }
+  },
+  "kothrud_pune": {
+    "match_keywords": ["kothrud", "paud road", "karve road"],
+    "city": "Pune",
+    "locality": "Kothrud",
+    "pin_code": "411038",
+    "price_inr": 12500000,
+    "area_sqft": 1000,
+    "property_type": "flat",
+    "amenities": ["lift", "24x7 security", "covered parking", "power backup"],
+    "location_attributes": {
+      "metro_access": true,
+      "metro_line": "Pune Metro Aqua Line",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 9.0,
+      "tech_parks_nearby": []
+    }
+  },
+  "andheri_west_mumbai": {
+    "match_keywords": ["andheri west", "lokhandwala", "versova"],
+    "city": "Mumbai",
+    "locality": "Andheri West",
+    "pin_code": "400053",
+    "price_inr": 28500000,
+    "area_sqft": 850,
+    "property_type": "flat",
+    "amenities": ["gym", "24x7 security", "covered parking", "lift"],
+    "location_attributes": {
+      "metro_access": true,
+      "metro_line": "Mumbai Metro Line 1 and Line 2A",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 4.5,
+      "tech_parks_nearby": ["NESCO", "Andheri MIDC"]
+    }
+  },
+  "thane_west_mumbai": {
+    "match_keywords": ["thane west", "ghodbunder", "majiwada"],
+    "city": "Mumbai",
+    "locality": "Thane West",
+    "pin_code": "400607",
+    "price_inr": 13500000,
+    "area_sqft": 950,
+    "property_type": "flat",
+    "amenities": ["clubhouse", "gym", "swimming pool", "24x7 security", "covered parking"],
+    "location_attributes": {
+      "metro_access": false,
+      "metro_line": "Thane Metro corridor (planned)",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 8.0,
+      "tech_parks_nearby": ["Hiranandani Business Park", "Wagle Estate"]
+    }
+  },
+  "kharghar_navi_mumbai": {
+    "match_keywords": ["kharghar", "navi mumbai", "sector 35 kharghar"],
+    "city": "Navi Mumbai",
+    "locality": "Kharghar",
+    "pin_code": "410210",
+    "price_inr": 9200000,
+    "area_sqft": 1050,
+    "property_type": "flat",
+    "amenities": ["clubhouse", "gym", "garden", "24x7 security", "covered parking"],
+    "location_attributes": {
+      "metro_access": true,
+      "metro_line": "Navi Mumbai Metro Line 1",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 10.0,
+      "tech_parks_nearby": ["CBD Belapur offices"]
+    }
+  },
+  "gurgaon_cyber_city": {
+    "match_keywords": ["cyber city", "dlf phase 2", "gurgaon", "gurugram"],
+    "city": "Gurgaon",
+    "locality": "DLF Cyber City",
+    "pin_code": "122002",
+    "price_inr": 24000000,
+    "area_sqft": 1600,
+    "property_type": "flat",
+    "amenities": ["clubhouse", "gym", "24x7 security", "power backup", "covered parking"],
+    "location_attributes": {
+      "metro_access": true,
+      "metro_line": "Delhi Metro Yellow Line / Rapid Metro",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 1.0,
+      "tech_parks_nearby": ["DLF Cyber City", "Udyog Vihar"]
+    }
+  },
+  "noida_sector_150": {
+    "match_keywords": ["sector 150", "noida 150", "yamuna expressway"],
+    "city": "Noida",
+    "locality": "Sector 150",
+    "pin_code": "201310",
+    "price_inr": 11000000,
+    "area_sqft": 1450,
+    "property_type": "flat",
+    "amenities": ["clubhouse", "gym", "sports complex", "swimming pool", "24x7 security"],
+    "location_attributes": {
+      "metro_access": false,
+      "metro_line": "Aqua Line extension connectivity nearby",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 9.0,
+      "tech_parks_nearby": ["Noida-Greater Noida Expressway offices"]
+    }
+  },
+  "dwarka_delhi": {
+    "match_keywords": ["dwarka", "sector 12 dwarka", "sector 21 dwarka"],
+    "city": "Delhi",
+    "locality": "Dwarka",
+    "pin_code": "110075",
+    "price_inr": 16500000,
+    "area_sqft": 1200,
+    "property_type": "flat",
+    "amenities": ["lift", "24x7 security", "covered parking", "power backup"],
+    "location_attributes": {
+      "metro_access": true,
+      "metro_line": "Delhi Metro Blue Line / Airport Express",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 12.0,
+      "tech_parks_nearby": []
+    }
+  },
+  "gachibowli_hyderabad": {
+    "match_keywords": ["gachibowli", "financial district hyderabad"],
+    "city": "Hyderabad",
+    "locality": "Gachibowli",
+    "pin_code": "500032",
+    "price_inr": 12800000,
+    "area_sqft": 1550,
+    "property_type": "flat",
+    "amenities": ["clubhouse", "gym", "swimming pool", "24x7 security", "covered parking"],
+    "location_attributes": {
+      "metro_access": false,
+      "metro_line": "Hyderabad Metro airport corridor (proposed)",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 1.5,
+      "tech_parks_nearby": ["Financial District", "HITEC City", "Microsoft Campus"]
+    }
+  },
+  "kondapur_hyderabad": {
+    "match_keywords": ["kondapur", "botanical garden road"],
+    "city": "Hyderabad",
+    "locality": "Kondapur",
+    "pin_code": "500084",
+    "price_inr": 9800000,
+    "area_sqft": 1350,
+    "property_type": "flat",
+    "amenities": ["clubhouse", "gym", "24x7 security", "power backup"],
+    "location_attributes": {
+      "metro_access": false,
+      "metro_line": "HITEC City metro access by road",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 2.5,
+      "tech_parks_nearby": ["HITEC City", "Cyber Towers"]
+    }
+  },
+  "kokapet_hyderabad": {
+    "match_keywords": ["kokapet", "neopolis", "narsingi"],
+    "city": "Hyderabad",
+    "locality": "Kokapet",
+    "pin_code": "500075",
+    "price_inr": 14500000,
+    "area_sqft": 1800,
+    "property_type": "flat",
+    "amenities": ["clubhouse", "gym", "swimming pool", "garden", "24x7 security"],
+    "location_attributes": {
+      "metro_access": false,
+      "metro_line": "Outer Ring Road growth corridor",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 5.0,
+      "tech_parks_nearby": ["Financial District", "Knowledge City"]
+    }
+  },
+  "omr_chennai": {
+    "match_keywords": ["omr", "thoraipakkam", "sholinganallur", "old mahabalipuram road"],
+    "city": "Chennai",
+    "locality": "OMR",
+    "pin_code": "600097",
+    "price_inr": 7600000,
+    "area_sqft": 1250,
+    "property_type": "flat",
+    "amenities": ["clubhouse", "gym", "24x7 security", "power backup"],
+    "location_attributes": {
+      "metro_access": false,
+      "metro_line": "Chennai Metro Phase 2 corridor (under construction)",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 1.0,
+      "tech_parks_nearby": ["TIDEL Park", "SIPCOT IT Park"]
+    }
+  },
+  "anna_nagar_chennai": {
+    "match_keywords": ["anna nagar", "annanagar", "shanti colony"],
+    "city": "Chennai",
+    "locality": "Anna Nagar",
+    "pin_code": "600040",
+    "price_inr": 15800000,
+    "area_sqft": 1250,
+    "property_type": "flat",
+    "amenities": ["lift", "24x7 security", "covered parking", "power backup"],
+    "location_attributes": {
+      "metro_access": true,
+      "metro_line": "Chennai Metro Green Line",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 12.0,
+      "tech_parks_nearby": []
+    }
+  },
+  "new_town_kolkata": {
+    "match_keywords": ["new town", "rajarhat", "action area"],
+    "city": "Kolkata",
+    "locality": "New Town",
+    "pin_code": "700156",
+    "price_inr": 7200000,
+    "area_sqft": 1200,
+    "property_type": "flat",
+    "amenities": ["clubhouse", "gym", "garden", "24x7 security"],
+    "location_attributes": {
+      "metro_access": false,
+      "metro_line": "Kolkata Metro Orange Line extension (under construction)",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 2.0,
+      "tech_parks_nearby": ["Sector V Salt Lake", "DLF IT Park"]
+    }
+  },
+  "salt_lake_kolkata": {
+    "match_keywords": ["salt lake", "sector v kolkata", "bidhan nagar"],
+    "city": "Kolkata",
+    "locality": "Salt Lake",
+    "pin_code": "700091",
+    "price_inr": 9800000,
+    "area_sqft": 1100,
+    "property_type": "flat",
+    "amenities": ["lift", "24x7 security", "covered parking"],
+    "location_attributes": {
+      "metro_access": true,
+      "metro_line": "East-West Metro",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 1.0,
+      "tech_parks_nearby": ["Sector V", "Infinity Benchmark"]
+    }
+  },
+  "sg_highway_ahmedabad": {
+    "match_keywords": ["sg highway", "sarkhej gandhinagar", "prahlad nagar"],
+    "city": "Ahmedabad",
+    "locality": "SG Highway",
+    "pin_code": "380015",
+    "price_inr": 8500000,
+    "area_sqft": 1400,
+    "property_type": "flat",
+    "amenities": ["clubhouse", "gym", "24x7 security", "covered parking"],
+    "location_attributes": {
+      "metro_access": false,
+      "metro_line": "Ahmedabad Metro Phase 2 connectivity improving",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 5.0,
+      "tech_parks_nearby": ["GIFT City corridor", "Prahlad Nagar offices"]
+    }
+  },
+  "vesu_surat": {
+    "match_keywords": ["vesu", "vip road surat", "althan"],
+    "city": "Surat",
+    "locality": "Vesu",
+    "pin_code": "395007",
+    "price_inr": 6200000,
+    "area_sqft": 1300,
+    "property_type": "flat",
+    "amenities": ["clubhouse", "gym", "24x7 security", "covered parking"],
+    "location_attributes": {
+      "metro_access": false,
+      "metro_line": "Surat Metro corridor (under construction)",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": null,
+      "tech_parks_nearby": []
+    }
+  },
+  "vaishali_nagar_jaipur": {
+    "match_keywords": ["vaishali nagar", "jaipur vaishali"],
+    "city": "Jaipur",
+    "locality": "Vaishali Nagar",
+    "pin_code": "302021",
+    "price_inr": 5800000,
+    "area_sqft": 1250,
+    "property_type": "flat",
+    "amenities": ["lift", "24x7 security", "covered parking", "garden"],
+    "location_attributes": {
+      "metro_access": false,
+      "metro_line": "Jaipur Metro Phase 2 proposed corridors",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 8.0,
+      "tech_parks_nearby": ["Mahindra SEZ"]
+    }
+  },
+  "gomti_nagar_lucknow": {
+    "match_keywords": ["gomti nagar", "vibhuti khand", "shaheed path"],
+    "city": "Lucknow",
+    "locality": "Gomti Nagar",
+    "pin_code": "226010",
+    "price_inr": 7200000,
+    "area_sqft": 1500,
+    "property_type": "flat",
+    "amenities": ["clubhouse", "gym", "24x7 security", "covered parking"],
+    "location_attributes": {
+      "metro_access": false,
+      "metro_line": "Lucknow Metro extension proposed",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 4.0,
+      "tech_parks_nearby": ["Vibhuti Khand offices"]
+    }
+  },
+  "vijay_nagar_indore": {
+    "match_keywords": ["vijay nagar", "indore vijay", "ab road"],
+    "city": "Indore",
+    "locality": "Vijay Nagar",
+    "pin_code": "452010",
+    "price_inr": 5600000,
+    "area_sqft": 1200,
+    "property_type": "flat",
+    "amenities": ["lift", "24x7 security", "covered parking", "garden"],
+    "location_attributes": {
+      "metro_access": false,
+      "metro_line": "Indore Metro corridor (under construction)",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 3.0,
+      "tech_parks_nearby": ["Super Corridor", "Crystal IT Park"]
+    }
+  },
+  "patia_bhubaneswar": {
+    "match_keywords": ["patia", "kiit square", "bhubaneswar patia"],
+    "city": "Bhubaneswar",
+    "locality": "Patia",
+    "pin_code": "751024",
+    "price_inr": 5400000,
+    "area_sqft": 1250,
+    "property_type": "flat",
+    "amenities": ["clubhouse", "gym", "24x7 security", "covered parking"],
+    "location_attributes": {
+      "metro_access": false,
+      "metro_line": "Bhubaneswar-Cuttack metro proposed",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 2.0,
+      "tech_parks_nearby": ["Infocity", "KIIT technology corridor"]
+    }
+  },
+  "zirakpur_chandigarh": {
+    "match_keywords": ["zirakpur", "chandigarh airport road", "vip road zirakpur"],
+    "city": "Chandigarh",
+    "locality": "Zirakpur",
+    "pin_code": "140603",
+    "price_inr": 6800000,
+    "area_sqft": 1500,
+    "property_type": "flat",
+    "amenities": ["clubhouse", "gym", "24x7 security", "covered parking"],
+    "location_attributes": {
+      "metro_access": false,
+      "metro_line": "Chandigarh Tricity metro proposed",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 10.0,
+      "tech_parks_nearby": ["Mohali IT City"]
+    }
+  },
+  "panjim_goa": {
+    "match_keywords": ["panjim", "panaji", "miramar"],
+    "city": "Goa",
+    "locality": "Panjim",
+    "pin_code": "403001",
+    "price_inr": 11500000,
+    "area_sqft": 1000,
+    "property_type": "flat",
+    "amenities": ["lift", "24x7 security", "covered parking", "sea proximity"],
+    "location_attributes": {
+      "metro_access": false,
+      "schools_nearby": true,
+      "it_corridor_proximity_km": null,
+      "tech_parks_nearby": []
+    }
+  },
+  "kakkanad_kochi": {
+    "match_keywords": ["kakkanad", "infopark kochi", "kochi infopark"],
+    "city": "Kochi",
+    "locality": "Kakkanad",
+    "pin_code": "682030",
+    "price_inr": 6500000,
+    "area_sqft": 1250,
+    "property_type": "flat",
+    "amenities": ["clubhouse", "gym", "24x7 security", "covered parking"],
+    "location_attributes": {
+      "metro_access": false,
+      "metro_line": "Kochi Metro Phase 2 extension toward Kakkanad",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 1.0,
+      "tech_parks_nearby": ["Infopark", "SmartCity Kochi"]
+    }
+  },
+  "saravanampatti_coimbatore": {
+    "match_keywords": ["saravanampatti", "coimbatore it park", "kalapatti"],
+    "city": "Coimbatore",
+    "locality": "Saravanampatti",
+    "pin_code": "641035",
+    "price_inr": 5200000,
+    "area_sqft": 1200,
+    "property_type": "flat",
+    "amenities": ["lift", "24x7 security", "covered parking", "garden"],
+    "location_attributes": {
+      "metro_access": false,
+      "metro_line": "Coimbatore metro proposal stage",
+      "schools_nearby": true,
+      "it_corridor_proximity_km": 1.5,
+      "tech_parks_nearby": ["CHIL SEZ", "Tidel Park Coimbatore"]
+    }
+  },
+  "rajpur_road_dehradun": {
+    "match_keywords": ["rajpur road", "dehradun rajpur", "jakhan"],
+    "city": "Dehradun",
+    "locality": "Rajpur Road",
+    "pin_code": "248001",
+    "price_inr": 7600000,
+    "area_sqft": 1300,
+    "property_type": "flat",
+    "amenities": ["lift", "24x7 security", "covered parking", "hill view"],
+    "location_attributes": {
+      "metro_access": false,
+      "schools_nearby": true,
+      "it_corridor_proximity_km": null,
+      "tech_parks_nearby": []
+    }
+  }
+}
